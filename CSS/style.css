@@ -1,13 +1,337 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-header {
-    display: flex;
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+/* Header */
+body header {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+header li {
+  padding-inline: 10px;
+  color: #232851;
+}
+header li a {
+  text-decoration: none;
+}
+/* Main / mitad arriba */
+.align-center {
+  align-items: center;
+}
+.the-button {
+  background-color: #8b48bf;
+  color: white;
+  padding: 12px;
+  padding-inline: 40px;
+  border: none;
+  border-radius: 50px;
+}
+.checkbtn {
+  font-size: 2.5rem;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.flex-container {
+  display: flex;
+}
+.margin10 {
+  margin: 10%;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify-end {
+  width: 40%;
+  text-align: end;
+}
+.big-title {
+  font-size: 3rem;
+  margin-top: 50px;
+  color: #232851;
+}
+.margin-bottom40 {
+  margin-bottom: 40px;
+}
+.violet-container {
+  background-color: #8b48bf;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 40px 100px;
+}
+.violet-container h2,
+.violet-container p {
+  width: 36%;
+}
+.title {
+  font-size: 2rem;
+}
+.sections {
+  padding-top: 4%;
+  padding-inline: 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
+}
+.sections section {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.sections .the-button {
+  margin-right: 30px;
+  padding-inline: 20px;
+}
+.align-start {
+  align-items: start;
+}
+
+/* Main / mitad debajo */
+
+.frame8 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 430px;
+  width: 100%;
+}
+
+.frame8 h2{
+  margin-bottom: 50px;
+}
+
+.frame8 .jugadores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.frame8 .jugadores .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 30dvw;
+  height: 200px;
+  align-items: center;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.frame8 .jugadores .cards .nombre {
+  font-weight: bold;
+}
+
+.frame8 .jugadores .cards .descripcion {
+  color: #b9b9c1;
+  font-size: 16px;
+  text-align: center;
+}
+
+.frame8 .jugadores .cards img {
+  position: absolute;
+  top: -10%;
+  width: 60px;
+  height: 60px;
+
+}
+
+.frame8 .boton {
+  height: 150px;
+}
+.frame8 .boton button {
+  width: 134px;
+  height: 44px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: #8b48bf;
+  margin-top: 10px;
+
+}
+
+.frame9 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8b48bf;
+  width: 100%;
+  height: 224px;
+}
+
+.frame9 div {
+  color: white;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.frame9 button {
+  width: 134px;
+  height: 44px;
+  color: #8b48bf;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e1e26;
+  width: 100%;
+  height: 247px;
+}
+
+.fparte1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 120px;
+  width: 150px;
+}
+.fparte1 .ficono {
+  width: 65%;
+}
+.fparte1 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+.fparte2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 115px;
+  width: 250px;
+  font-size: 80%;
+}
+.fparte2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 145px;
+}
+.fparte2 ul li {
+  margin-bottom: 20px;
+}
+
+.fparte3 {
+  display: flex;
+  align-content: space-between;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 360px;
+}
+.fparte3 .inbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.fparte3 input {
+  border: none;
+  border-radius: 50px;
+  width: 272.81px;
+  height: 48.52px;
+}
+.fparte3 button {
+  width: 63px;
+  height: 42px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: #8b48bf;
+}
+.fparte3 p {
+  font-size: 80%;
+  color: #8c8c94;
+}
+
+@media (max-width: 480px) {
+
+  /* Header */
+  body header {
     padding: 40px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+  .checkbtn {
+    display: block;
+  }
+  header ul {
+    position: absolute;
+    width: 100%;
+    background-color: #3CDDF3;
+    top: -350px;
+    left: 0;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0.95;
+    z-index: -1;
+  }
+  header ul li {
+    padding: 20px 0;
+  }
+  header ul li a {
+    padding: 20px 80px;
+  }
+  header ul li:nth-child(-n+4) {
+    border-bottom: 3px dashed #232851  ;
+  }
+  #check:checked ~ ul {
+    top: 130px;
+  }
+  header .the-button {
+    display: none;
+  }
+
+  /* Main / Mitad arriba */
+  .intro-image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .justify-end {
+    width: 100%;
+  }
+  .big-title{
+    font-size: 2.8rem;
+  }
+  .violet-container {
+    background-color: #3CDDF3;
+    padding: 40px 20px;
+  }
+.violet-container p {
+  width: 90%;
 }
-.navlist {
-    display: flex;
+.violet-container h2 {
+    width: 60%;
+    margin-bottom: 50px;
+}
+.sections {
+    margin: 50px 0;
+    background-color: white;
+}
+.sections section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 }

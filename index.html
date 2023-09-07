@@ -3,56 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Document</title>
+    <title>Sportit</title>
   </head>
   <body>
     <header>
       <img src="IMG/logo.svg" alt="" />
-      <nav>
-        <ul class="navlist" type="none">
-          <li>Sports</li>
-          <li>Products</li>
-          <li>About us</li>
-          <li>Trainning</li>
-          <li>Community</li>
+      <nav class="align-center flex-container">
+        <input type="checkbox" name="menu" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="flex-container column" type="none">
+          <li><a href="">Sports</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Trainning</a></li>
+          <li><a href="">Community</a></li>
         </ul>
-        <button class="contact-button">Contact</button>
       </nav>
+      <button class="the-button">Contact</button>
     </header>
     <main>
-        <section>
-            <img height="20" src="IMG/padel-intro.png" alt="">
+      <section class="flex-container margin10 space-between column">
+        <img class="intro-image" src="IMG/padel-intro.png" alt="" />
+        <article class="justify-end">
+          <h1 class="big-title margin-bottom40">
+            LIVE: Follow the Telcel Huawei Mexico Open 2022 for free
+          </h1>
+          <p class="margin-bottom40">
+            The final Open of the 2022 World Padel Tour season is underway,
+            don't miss out on any of the action!
+          </p>
+          <button class="the-button">Contact</button>
+        </article>
+      </section>
+      <section class="violet-container column">
+        <h2 class="title">What´s different between pros?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+          dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
+        </p>
+      </section>
+      <section class="flex-container sections column">
+        <section class="flex-container align-start">
+          <span class="the-button">01</span>
+          <div>
+            <h4>Track company-wide progress</h4>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
         </section>
+        <section class="flex-container align-start">
+          <span class="the-button">02</span>
+          <div>
+            <h4>Advance built-in reports</h4>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+        </section>
+        <section class="flex-container align-start">
+          <span class="the-button">03</span>
+          <div>
+            <h4>Everything you need in one place</h4>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="frame8">
+        <h2>Best of the month</h2>
+        <div class="jugadores">
+          <div class="cards">
+            <img src="IMG/avatar-sanyo.png" alt="" />
+            <p class="nombre">Sanyo</p>
+            <p class="descripcion">
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+          <div class="cards">
+            <img src="IMG/avatar.lebron.png" alt="" />
+            <p class="nombre">Lebron</p>
+            <p class="descripcion">
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+          <div class="cards">
+            <img src="IMG/avatar-navarro.png" alt="" />
+            <p class="nombre">Navarro</p>
+            <p class="descripcion">
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+        </div>
+        <div class="boton">
+          <button>More</button>
+        </div>
+      </section>
+      <section class="frame9">
+        <div>
+          <p>Get to know the best</p>
+          <p>teams of the year</p>
+        </div>
+        <div>
+          <button>Go for it</button>
+        </div>
+      </section>
     </main>
-
     <footer>
-      <nav>
-        <img src="IMG/logo.svg" alt="" />
-        
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li>Trainning</li>
-          <li>Community</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </nav>
+      <div class="fparte1">
+        <img class="flogo" src="IMG/logo.svg" alt="" />
+        <nav>
+          <ul>
+            <li><img class="ficono" src="IMG/icon-facebook.svg" alt="" /></li>
+            <li><img class="ficono" src="IMG/icon-youtube.svg" alt="" /></li>
+            <li><img class="ficono" src="IMG/icon-twitter.svg" alt="" /></li>
+            <li><img class="ficono" src="IMG/icon-pinterest.svg" alt="" /></li>
+            <li><img class="ficono" src="IMG/icon-instagram.svg" alt="" /></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fparte2">
+        <nav>
+          <ul class="flista1">
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Products</li>
+            <li>About Us</li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="flista2">
+            <li>Trainning</li>
+            <li>Community</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fparte3">
+        <div class="inbox">
+          <form action="">
+            <input type="search" placeholder="Update in your inbox..." />
+          </form>
+          <button class="contact-button">Go</button>
+        </div>
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>
